@@ -287,7 +287,7 @@ class Runtastic
             $this->logout();
             $this->login($tryCounter);
         } else {
-            throw new ServerErrorException('Server error, try again later. Response code: ' . $this->getResponseStatusCode() . ' Response: ' . json_encode($responseOutputJson));
+            //throw new ServerErrorException('Server error, try again later. Response code: ' . $this->getResponseStatusCode() . ' Response: ' . json_encode($responseOutputJson));
         }
     }
 
